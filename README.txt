@@ -3,8 +3,8 @@ AUTONOMOUS SYSTEMS AND ROBOTICS 700
 Intelligent Autonomous Robotic Systems Project
 ================================================================
 
-Author:         [Your Name]
-Student No:     [Your ITS Number]
+Author:         Lesedi Magakwe
+Student No:     402311859
 Submission:     12 October 2026
 
 ----------------------------------------------------------------
