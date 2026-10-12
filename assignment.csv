@@ -1,0 +1,4 @@
+agent,target,target_x,target_y
+epuck1,target3,0.0000,-2.0000
+epuck2,target2,2.0000,1.5000
+epuck3,target1,-2.0000,1.5000

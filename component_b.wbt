@@ -1,0 +1,164 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 3.6829837898936455e-05 3.682994204515229e-05 23.024982040780284
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 6 6
+}
+E-puck {
+  hidden position_0_0 14376.198491304087
+  hidden position_0_1 14703.886401319845
+  hidden linearVelocity_0 -6.810487903490473e-05 3.089022739283048e-05 3.6167764793358184e-08
+  hidden angularVelocity_0 -0.0020593148009908674 -0.004540250986938615 6.921104525636316e-12
+  hidden rotation_1 0 1 0 0.27050847719307003
+  hidden linearVelocity_1 -9.080541013857663e-05 4.1186473093054324e-05 1.5305090500452057e-11
+  hidden angularVelocity_1 -0.002059314808426074 -0.004540251003115338 2.5256076727362286e-10
+  hidden rotation_2 0 1 0 1.2327825196130346
+  hidden linearVelocity_2 -9.080540968280288e-05 4.118647287626437e-05 1.5636025787604476e-11
+  hidden angularVelocity_2 -0.0020593148074758805 -0.004540251003527045 -2.387171513001725e-10
+  translation -1.8335309394397712 2.4367277306128767 -6.394441760459481e-05
+  rotation -0.0006790764578563024 0.00014680713749432508 0.9999997586513854 2.7157752297825395
+  name "epuck1"
+  controller "swarm_controller"
+  controllerArgs [
+    ""
+  ]
+}
+E-puck {
+  hidden position_0_0 467.3266762353124
+  hidden position_0_1 478.4689535578309
+  hidden linearVelocity_0 -8.895932945095972e-10 1.3576931138931104e-08 -2.6120024661698457e-12
+  hidden angularVelocity_0 -1.1297612533172394e-06 -5.9316104541063974e-08 1.660215861291568e-12
+  hidden rotation_1 0 1 0 2.3709635040229915
+  hidden linearVelocity_1 -1.1861721513023364e-09 1.9223063671727643e-08 6.651505699660424e-13
+  hidden angularVelocity_1 -1.1296268254198636e-06 -5.93094011419667e-08 1.7626941473524788e-12
+  hidden rotation_2 0 1 0 0.9468702121823281
+  hidden linearVelocity_2 -1.1861725571053485e-09 1.9223151410755983e-08 -6.659103751152827e-13
+  hidden angularVelocity_2 -1.129626875773759e-06 -5.930857402797441e-08 1.5589755171052329e-12
+  translation 2.593803475710719 2.9630013660586116 -6.395987119439499e-05
+  rotation 0.00023046138172098363 -0.00021868405478246727 0.9999999495324167 1.6232745684031222
+  name "epuck2"
+  controller "swarm_controller"
+  controllerArgs [
+    ""
+  ]
+}
+E-puck {
+  hidden position_0_0 14755.316017983074
+  hidden position_0_1 13965.625659796568
+  hidden linearVelocity_0 -5.9445671046331536e-05 -6.136275223785745e-05 3.883846943848003e-08
+  hidden angularVelocity_0 0.004090792358159677 -0.003962988751037272 -3.395145172266655e-12
+  hidden rotation_1 0 1 0 2.3969167254047865
+  hidden linearVelocity_1 -7.926005739141177e-05 -8.18161386397872e-05 1.2631851322129733e-11
+  hidden angularVelocity_1 0.004090792369867861 -0.003962988763212098 2.441582787738206e-10
+  hidden rotation_2 0 1 0 4.387907243526409
+  hidden linearVelocity_2 -7.926005771640723e-05 -8.181613898067058e-05 1.2542855621256545e-11
+  hidden angularVelocity_2 0.004090792370447696 -0.003962988762696618 -2.509470904911627e-10
+  translation 0.6464522578191766 0.6738497045577599 -6.394552949306152e-05
+  rotation 0.0006591485489208506 0.0002791760975786067 -0.9999997437919156 2.34032723481363
+  name "epuck3"
+  controller "swarm_controller"
+  controllerArgs [
+    ""
+  ]
+}
+DEF obstacle1 Solid {
+  translation -1 0 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.5 1
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "obstacle1"
+}
+DEF obstacle2 Solid {
+  translation 1 1 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0.7
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "obstacle2"
+}
+DEF obstacle3 Solid {
+  translation 1 -1 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.4 0.8 0.4
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "obstacle3"
+}
+DEF target1 Solid {
+  translation -2 1.5 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.2
+      }
+    }
+  ]
+  name "target1"
+}
+DEF target2 Solid {
+  translation 2 1.5 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.2
+      }
+    }
+  ]
+  name "target2"
+}
+DEF target3 Solid {
+  translation 0 -2 0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.2
+      }
+    }
+  ]
+  name "target3"
+}

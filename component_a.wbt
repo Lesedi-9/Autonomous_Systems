@@ -1,0 +1,97 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0 0 8.640556228289283
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 5 5
+}
+E-puck {
+  hidden position_0_0 5.124634649878701
+  hidden position_0_1 7.327266638948404
+  hidden linearVelocity_0 0.07851282683322051 0.057454001112853974 1.8176817863633196e-05
+  hidden angularVelocity_0 -0.00481600296517886 -0.00021041133634679186 -0.0049910036322022636
+  hidden rotation_1 0 1 0 5.124634649878701
+  hidden linearVelocity_1 0.07850847738104902 0.057464081291020756 -2.5872502386282226e-06
+  hidden angularVelocity_1 -2.8743150204798136 3.9252781509327552 0.005490893497656461
+  hidden rotation_2 0 -1 0 5.239103975410769
+  hidden linearVelocity_2 0.07853601737533654 0.0575076744233454 -7.757708404154663e-06
+  hidden angularVelocity_2 -2.87513879578663 3.926953065647442 0.006249297435981807
+  translation -1.892716097992591 -1.9490802955645277 -6.749320782208079e-05
+  rotation 0.001594511838709193 0.0008936127041692335 0.9999983294927703 0.6311141316747149
+  name "epuck"
+  controller "my_controller"
+  controllerArgs [
+    ""
+  ]
+}
+DEF obstacle1 Solid {
+  translation -2 0 0.3
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.5 1
+      }
+      geometry Cone {
+        bottomRadius 0.34
+        height 1
+      }
+    }
+  ]
+  name "obstacle1"
+}
+DEF obstacle2 Solid {
+  translation 0 1 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0.7
+      }
+      geometry Cylinder {
+        height 0.5
+        radius 0.15
+      }
+    }
+  ]
+  name "obstacle2"
+}
+DEF obstacle3 Solid {
+  translation 2 0 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Sphere {
+        radius 0.3
+      }
+    }
+  ]
+  name "obstacle3"
+}
+DEF obstacle4 Solid {
+  translation 0 -2 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+      }
+      geometry Capsule {
+        height 0.4
+        radius 0.2
+      }
+    }
+  ]
+  name "obstacle4"
+}
